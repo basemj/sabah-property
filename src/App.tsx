@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import logo from './assets/logo.png'
 import './App.css'
 
 function App() {
@@ -7,26 +7,35 @@ function App() {
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header>
+        <img src={logo} alt="Sabah Properties" className='logo' />
+      </header>
+      <main>
+        <h1>As your local agent, we are ready to help</h1>
+        <div className='items'>
+          <div className='item'>
+            <span className="material-symbols-outlined">
+              share_location
+            </span>
+            <h2>Visit</h2>
+            <p>Unit 2 424 Edgware Road, London, W2 1EG</p>
+          </div>
+          <div className='item'>
+            <span className="material-symbols-outlined">
+              phone_callback
+            </span>
+            <h2>Call</h2>
+            <p>020 8033 8230</p>
+          </div>
+          <div className='item'>
+            <span className="material-symbols-outlined">
+              send
+            </span>
+            <h2>Email</h2>
+            <p>sj@sabahproperties.co.uk</p>
+          </div>
+        </div>
+      </main>
     </div>
   )
 }
